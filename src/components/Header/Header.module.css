@@ -1,0 +1,156 @@
+  
+  ul {
+    list-style: none;
+    font-family: Outfit;
+  
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  /* navbar */
+  .navbar {
+    /* background-color: aliceblue; */
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+    min-height: 70px;
+  }
+  
+  
+  /* logo  */
+  .logo {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* ul  */
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 780px){
+    
+    /* hamburger */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+          background-color: #120f0b;
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+      }
+  
+    /* adding active class to the bars  */
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+  
+    /* navMenu */
+  
+    .navMenu{
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 70px;
+      left: -100%;
+      text-align: start;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      background-color: white;
+      padding: 10px;
+      z-index: 1000;
+    }
+  
+    .navMenu.active{
+      left: 0;
+    }
+  
+    .navMenu li {
+      margin: 16px 0;
+    }
+  }
+
+ /* Navigation menu styles */
+.navMenu {
+  list-style: none; /* Remove bullets from list */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 20px; /* Space between menu items */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+/* Navigation link styles */
+.navLink {
+  color: black; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logoImage {
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between image and text if needed */
+  vertical-align: middle; /* Aligns with text */
+}
+
+/* styles.module.css or your relevant CSS file */
+.button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(95 111 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  padding: 9px 25px; /* Padding for top/bottom and left/right */
+  border-radius: 9999px; /* Fully rounded corners */
+  font-weight: 300;
+  font-size: 1rem; /* Base font size */
+  border: rgb(95 111 255 / var(--tw-bg-opacity));;
+  display: inline-block; /* Ensure proper spacing */
+}
+
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(95 111 255 / var(--tw-bg-opacity));
+  transition-duration: .3s;
+  transform: translateY(-2px);
+}
+
+.button.hidden {
+  display: none; /* Hide on smaller screens by default */
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .button.hidden {
+    display: inline-block; /* Show button on mobile screens */
+    margin-left: auto; /* Align to the right if needed */
+    margin-right: 1rem; /* Add some spacing from other elements */
+  }
+}
