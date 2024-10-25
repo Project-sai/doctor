@@ -7,7 +7,7 @@ const Doctorhomepage = () => {
     return (
         <><div className="hero-section">
             <div className="hero-content">
-                <h1>Book Appointment With Trusted professional Doctors</h1>
+                <h1>Book Appointment With Trusted  Doctors</h1>
                 <p>Simply browse through our extensive list of trusted doctors, schedule your appointment hassle-free.</p>
                 <div className="profile-pics">
                     <img src="https://i.pravatar.cc/50?img=1" alt="Profile 1" className="profile-pic" />
