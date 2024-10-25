@@ -18,7 +18,7 @@ import { IconButton } from '@mui/material';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'; // Import Exit icon
 import {  useNavigate } from 'react-router-dom'; // Import useNavigate
 
-
+// const drawerWidth = 240;
 
 export default function Navbar(props) {
   const navigate = useNavigate(); // Initialize useNavigate

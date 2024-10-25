@@ -3,7 +3,8 @@ import React from 'react';
 import '../Doctor/Home.css';
 import LogoutButton from '../LogoutButton';
 const Home = () => {
-   
+    // const navigate = useNavigate(); // Use navigate for redirection
+
        return (
         <div className="home-container">
             

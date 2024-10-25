@@ -4,7 +4,8 @@ import Login from './components/Login';
 import Home from './components/Doctor/Home';
 // import About from './components/Header/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import Navbar from './components/Navbar';
+// import Signup from './components/Signup';
 import { BrowserRouter as Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./components/Context/AuthProvider";
 import ProtectedRoute from "./components/Context/ProtectedRoute";
@@ -17,6 +18,7 @@ import AllDoctors from './components/Header/AllDoctors';
 import Doctorhomepage from './components/Doctor/Doctorhomepage'
 
 function App() {
+  // const myWidth = 240; // Define your drawer width here
 
   return (
   

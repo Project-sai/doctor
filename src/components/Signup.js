@@ -10,7 +10,7 @@ const Signup = () => {
     const [pId, setPId] = useState('');
     const [address, setAddress] = useState('');
     const [email, setEmail] = useState('');
-
+    // const [phoneNumber, setPhoneNumber] = useState('');
     
     const navigate = useNavigate(); // Initialize navigate
 

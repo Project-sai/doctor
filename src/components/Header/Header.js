@@ -31,7 +31,10 @@ function Header() {
     const toggleActiveClass = () => {
       setIsActive(!isActive);
     };
- 
+    //clean up function to remove the active class
+    // const removeActive = () => {
+    //   setIsActive(false)
+    // }
     return (
       
         <header className="header">
