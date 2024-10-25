@@ -26,7 +26,7 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
+            <h2>Login To Hospital</h2>
             {error && <p className="error-message">{error}</p>} {/* Error message */}
 
             <form onSubmit={handleLogin}>
