@@ -13,12 +13,12 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import MenuIcon from '@mui/icons-material/Menu';
-import {Link, useLocation, UseLocation} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import { IconButton } from '@mui/material';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'; // Import Exit icon
 import {  useNavigate } from 'react-router-dom'; // Import useNavigate
 
-// const drawerWidth = 240;
+
 
 export default function Navbar(props) {
   const navigate = useNavigate(); // Initialize useNavigate

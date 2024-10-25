@@ -1,10 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import '../Doctor/Home.css';
 import LogoutButton from '../LogoutButton';
 const Home = () => {
-    const navigate = useNavigate(); // Use navigate for redirection
-
+   
        return (
         <div className="home-container">
             
